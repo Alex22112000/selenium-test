@@ -55,7 +55,7 @@ public class MaiTest {
     }
 
     private void checkExit(){
-        checkButton = find("//*[@class='resplash-btn resplash-btn_outlined-themed resplash-btn_mailbox-big iimegem-de8k2m']");
+        checkButton = find("//*[@class='resplash-btn resplash-btn_outlined-themed resplash-btn_mailbox-big caa__dcaf__de8k2m']");
         if(!checkButton.isDisplayed()) Assert.fail();
     }
     
@@ -75,9 +75,9 @@ public class MaiTest {
         delay(15);
         
         openProfileMenu();
-        delay(15);
+        delay(120);
         checkProfileName("Тестич Тестовый");
-        delay(15);
+        delay(30);
 
         exit();
         checkExit();
